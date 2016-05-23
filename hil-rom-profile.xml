@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="20" name="Hill-Rom-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Hill-Rom-DeviceRule5a0e57cd-8672-463c-823b-a96a3958bf8d"/>
+<PolicyRule certaintyFactor="10" name="Hill-Rom-DeviceRulef60104cc-d492-465e-9c9a-8d9a5a266a84"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Hill-Rom-Device-MAC-Addr-Check" expression="Hill-Rom-Device-MAC-Addr-Check" name="Hill-Rom-DeviceRule5a0e57cd-8672-463c-823b-a96a3958bf8d" ruleType="Regular"/>
+<Rule description="Hill-Rom-Device-MAC-OUI-Check" expression="Hill-Rom-Device-MAC-OUI-Check" name="Hill-Rom-DeviceRulef60104cc-d492-465e-9c9a-8d9a5a266a84" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="MACAddress" attributeValue="0014B8" description="Condition for Hill-Rom device based on MAC Address" name="Hill-Rom-Device-MAC-Addr-Check" operator="Starts with" type="Mac"/>
+<Check attributeName="OUI" attributeValue="Hill-Rom" description="Condition for Hill-Rom device based on MAC-OUI" name="Hill-Rom-Device-MAC-OUI-Check" operator="Contains" type="Mac"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

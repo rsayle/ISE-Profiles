@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Profiles a Windows XP device by its DHCP behavior" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="WinXP-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="WinXP-DeviceRule9f2d0ea6-4683-4f79-a356-5e69802512b4"/>
+<PolicyRule certaintyFactor="10" name="WinXP-DeviceRule7034816a-188d-497f-a432-8efaa221d7a6"/>
+<PolicyRule certaintyFactor="10" name="WinXP-DeviceRulef4523562-00cd-4bfd-b786-e0c0f586033d"/>
+<PolicyRule certaintyFactor="10" name="WinXP-DeviceRulec1b2d7ef-171f-42c9-80a1-024b0007a074"/>
+<PolicyRule certaintyFactor="10" name="WinXP-DeviceRulee12173bb-d30b-4ebe-b932-3d2c1c2d47d5"/>
+<PolicyRule certaintyFactor="10" name="WinXP-DeviceRule7586cc25-0afb-4003-9930-9730890f9d74"/>
+<PolicyRule certaintyFactor="10" name="WinXP-DeviceRule488fda1c-9c74-46ab-b190-afd726b7183b"/>
+<PolicyRule certaintyFactor="10" name="WinXP-DeviceRule71c7c91b-ff04-4bd4-abe0-2d8b6d8c424c"/>
+<PolicyRule certaintyFactor="10" name="WinXP-DeviceRulea95fc96d-e65d-4e17-908a-3c9b50a7b47f"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="WinXP-DHCP-PRL-Check-7" expression="WinXP-DHCP-PRL-Check-7" name="WinXP-DeviceRule9f2d0ea6-4683-4f79-a356-5e69802512b4" ruleType="Regular"/>
+<Rule description="WinXP-DHCP-PRL-Check-2" expression="WinXP-DHCP-PRL-Check-2" name="WinXP-DeviceRule7034816a-188d-497f-a432-8efaa221d7a6" ruleType="Regular"/>
+<Rule description="WinXP-DHCP-PRL-Check-6" expression="WinXP-DHCP-PRL-Check-6" name="WinXP-DeviceRulef4523562-00cd-4bfd-b786-e0c0f586033d" ruleType="Regular"/>
+<Rule description="WinXP-DHCP-PRL-Check-4" expression="WinXP-DHCP-PRL-Check-4" name="WinXP-DeviceRulec1b2d7ef-171f-42c9-80a1-024b0007a074" ruleType="Regular"/>
+<Rule description="WinXP-DHCP-PRL-Check-3" expression="WinXP-DHCP-PRL-Check-3" name="WinXP-DeviceRulee12173bb-d30b-4ebe-b932-3d2c1c2d47d5" ruleType="Regular"/>
+<Rule description="WinXP-DHCP-PRL-Check-1" expression="WinXP-DHCP-PRL-Check-1" name="WinXP-DeviceRule7586cc25-0afb-4003-9930-9730890f9d74" ruleType="Regular"/>
+<Rule description="WinXP-DHCP-PRL-Check-9" expression="WinXP-DHCP-PRL-Check-9" name="WinXP-DeviceRule488fda1c-9c74-46ab-b190-afd726b7183b" ruleType="Regular"/>
+<Rule description="WinXP-DHCP-PRL-Check-8" expression="WinXP-DHCP-PRL-Check-8" name="WinXP-DeviceRule71c7c91b-ff04-4bd4-abe0-2d8b6d8c424c" ruleType="Regular"/>
+<Rule description="WinXP-DHCP-PRL-Check-5" expression="WinXP-DHCP-PRL-Check-5" name="WinXP-DeviceRulea95fc96d-e65d-4e17-908a-3c9b50a7b47f" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="28,2,3,15,6,12,44,47" description="" name="WinXP-DHCP-PRL-Check-7" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,15,3,6,44,46,47,31,33,249,43,252" description="" name="WinXP-DHCP-PRL-Check-2" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="15,3,6,44,46,47,31,33,249,43,252,12" description="" name="WinXP-DHCP-PRL-Check-6" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="15,3,6,44,46,47,31,33,249,43" description="" name="WinXP-DHCP-PRL-Check-4" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,15,3,6,44,46,47,31,33,249,43,252,12" description="" name="WinXP-DHCP-PRL-Check-3" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,15,3,6,44,46,47,31,33,249,43" description="" name="WinXP-DHCP-PRL-Check-1" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,15,3,6,44,46,4" description="" name="WinXP-DHCP-PRL-Check-9" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,15,3,6,44,46,47,31,33,121,249,43,200" description="" name="WinXP-DHCP-PRL-Check-8" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="15,3,6,44,46,47,31,33,249,43,252" description="" name="WinXP-DHCP-PRL-Check-5" operator="Equals" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

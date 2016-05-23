@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Win7-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Win7-DeviceRule44374425-4507-4918-aec4-b65d2f63e235"/>
+<PolicyRule certaintyFactor="10" name="Win7-DeviceRuled39debdf-e705-4c97-88ee-1606d9225f49"/>
+<PolicyRule certaintyFactor="10" name="Win7-DeviceRule25b33075-d18f-4cd3-aa32-4db6d1ea039d"/>
+<PolicyRule certaintyFactor="10" name="Win7-DeviceRule2b90f526-3edd-4d1f-b6db-c014cf03b46e"/>
+<PolicyRule certaintyFactor="10" name="Win7-DeviceRule03022945-f2cc-465a-bf5c-f0646c1533b9"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Win7-DHCP-PRL-Check-3" expression="Win7-DHCP-PRL-Check-3" name="Win7-DeviceRule44374425-4507-4918-aec4-b65d2f63e235" ruleType="Regular"/>
+<Rule description="Win7-DHCP-PRL-Check-1" expression="Win7-DHCP-PRL-Check-1" name="Win7-DeviceRuled39debdf-e705-4c97-88ee-1606d9225f49" ruleType="Regular"/>
+<Rule description="Win7-DHCP-PRL-Check-5" expression="Win7-DHCP-PRL-Check-5" name="Win7-DeviceRule25b33075-d18f-4cd3-aa32-4db6d1ea039d" ruleType="Regular"/>
+<Rule description="Win7-DHCP-PRL-Check-2" expression="Win7-DHCP-PRL-Check-2" name="Win7-DeviceRule2b90f526-3edd-4d1f-b6db-c014cf03b46e" ruleType="Regular"/>
+<Rule description="Win7-DHCP-PRL-Check-4" expression="Win7-DHCP-PRL-Check-4" name="Win7-DeviceRule03022945-f2cc-465a-bf5c-f0646c1533b9" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,15,3,6,44,46,47,31,33,121,249,43,0,176,112" description="" name="Win7-DHCP-PRL-Check-3" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,15,3,6,44,46,47,31,33,121,249,43,0,80" description="" name="Win7-DHCP-PRL-Check-1" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,15,3,6,44,46,47,31,33" description="" name="Win7-DHCP-PRL-Check-5" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,15,3,6,44,46,47,31,33,121,249,43,0,112,98" description="" name="Win7-DHCP-PRL-Check-2" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,15,3,6,44,46,47,31,33,121,249,43,0,192,176,112" description="" name="Win7-DHCP-PRL-Check-4" operator="Equals" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

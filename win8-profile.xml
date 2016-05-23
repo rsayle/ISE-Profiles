@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Win8-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Win8-DeviceRule8002f430-bf83-4290-92f2-674a9d3bb141"/>
+<PolicyRule certaintyFactor="10" name="Win8-DeviceRulefe5451dd-1e6a-4b95-b430-e939caddddbf"/>
+<PolicyRule certaintyFactor="10" name="Win8-DeviceRule836befe1-baf7-43e9-abf0-040475eeb38c"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Win8-DHCP-PRL-Check-2" expression="Win8-DHCP-PRL-Check-2" name="Win8-DeviceRule8002f430-bf83-4290-92f2-674a9d3bb141" ruleType="Regular"/>
+<Rule description="Win8-DHCP-PRL-Check-3" expression="Win8-DHCP-PRL-Check-3" name="Win8-DeviceRulefe5451dd-1e6a-4b95-b430-e939caddddbf" ruleType="Regular"/>
+<Rule description="Win8-DHCP-PRL-Check-1" expression="Win8-DHCP-PRL-Check-1" name="Win8-DeviceRule836befe1-baf7-43e9-abf0-040475eeb38c" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,3,6,15,33,44,46,47,121,249,43,60,212" description="" name="Win8-DHCP-PRL-Check-2" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,15,3,6,44,46,47,31" description="" name="Win8-DHCP-PRL-Check-3" operator="Equals" type="DHCP"/>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,15,3,6,44,46,47,31,33,121,249,252,43" description="" name="Win8-DHCP-PRL-Check-1" operator="Equals" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="Medical devices manufactured by Masimo Corporation." isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="Masimo-Medical-Device" version="0">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="Masimo-Medical-DeviceRule33d98a80-ce20-4ded-96dd-fca4181807ba"/>
+<PolicyRule certaintyFactor="10" name="Masimo-Medical-DeviceRule8c1d2bfe-c59f-4f61-8274-521bfc01d5a4"/>
+<PolicyRule certaintyFactor="10" name="Masimo-Medical-DeviceRulee19ca1f4-fd57-4dfc-ad51-50f7ef02228b"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="Masimo-OUI-Check" expression="Masimo-OUI-Check" name="Masimo-Medical-DeviceRule33d98a80-ce20-4ded-96dd-fca4181807ba" ruleType="Regular"/>
+<Rule description="Masimo-MAC-Check-1_OR_Masimo-MAC-Check-2" expression="Masimo-MAC-Check-1 | Masimo-MAC-Check-2" name="Masimo-Medical-DeviceRule8c1d2bfe-c59f-4f61-8274-521bfc01d5a4" ruleType="Regular"/>
+<Rule description="Masimo-DHCP-CI-Check-1_OR_Masimo-DHCP-CI-Check-2" expression="Masimo-DHCP-CI-Check-1 | Masimo-DHCP-CI-Check-2" name="Masimo-Medical-DeviceRulee19ca1f4-fd57-4dfc-ad51-50f7ef02228b" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="OUI" attributeValue="Masimo" description="MAC OUI check for Masimo medical devices." name="Masimo-OUI-Check" operator="Equals" type="Mac"/>
+<Check attributeName="MACAddress" attributeValue="50-4A-5E" description="MAC address checks for Masimo medical devices." name="Masimo-MAC-Check-1" operator="Starts with" type="Mac"/>
+<Check attributeName="MACAddress" attributeValue="E0-C2-B7" description="MAC address check for Masimo medical devices." name="Masimo-MAC-Check-2" operator="Starts with" type="Mac"/>
+<Check attributeName="dhcp-client-identifier" attributeValue="50-4A-5E" description="DHCP client identifier (opt 61) for Masimo medical devices." name="Masimo-DHCP-CI-Check-1" operator="Starts with" type="DHCP"/>
+<Check attributeName="dhcp-client-identifier" attributeValue="E0-C2-B7" description="DHCP client identifier (opt 61) for Masimo medical devices." name="Masimo-DHCP-CI-Check-2" operator="Starts with" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>

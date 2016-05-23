@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><CPMProfilerPolicies>
+<Policies>
+<Policy description="" isEnabled="true" matchingIdentityGroup="true" minimumCertaintyMetric="10" name="WinXP-Embedded-Device" version="2">
+<PolicyRules>
+<PolicyRule certaintyFactor="10" name="WinXP-Embedded-DeviceRule6e1b788a-a9b9-4880-978d-b378d6e7e559"/>
+</PolicyRules>
+</Policy>
+</Policies>
+<Rules>
+<Rule description="WinXP-Embedded-DHCP-PRL-Check-1" expression="WinXP-Embedded-DHCP-PRL-Check-1" name="WinXP-Embedded-DeviceRule6e1b788a-a9b9-4880-978d-b378d6e7e559" ruleType="Regular"/>
+</Rules>
+<Checks>
+<Check attributeName="dhcp-parameter-request-list" attributeValue="1,15,3,6,44,46,47,31,33,249,43,171,172" description="" name="WinXP-Embedded-DHCP-PRL-Check-1" operator="Equals" type="DHCP"/>
+</Checks>
+<Actions/>
+<ScanActions/>
+</CPMProfilerPolicies>
